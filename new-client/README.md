@@ -2,15 +2,11 @@
 
 # React + Vite +tailWind + React Route + redux
 ## create react project with Vite
-### `npm create vite@latest shopping-cart --template react` 
-### `cd shopping-cart `
-### `npm install @reduxjs/toolkit react-redux react-icons react-router-dom `
-### `npm install`
-### `npm install -D tailwindcss@3 postcss autoprefixer `
-### `npx tailwindcss init -p`
-
-## config tailwind.config.js   https://v3.tailwindcss.com/docs/guides/vite
-`npm run dev`
+```npm create vite@latest client --template react` 
+cd client 
+npm install @reduxjs/toolkit react-redux react-icons react-router-dom 
+npm install
+npm run dev```
 
 # Redux 
 Redux is a pattern and library for managing and updating global application state, where the UI triggers events called "actions" to describe what happened, and separate update logic called "reducers" updates the state in response. It serves as a centralized store for state that needs to be used across your entire application, with rules ensuring that the state can only be updated in a predictable fashion. The patterns and tools provided by Redux make it easier to understand when, where, why, and how the state in your application is being updated, and how your application logic will behave when those changes occur.
