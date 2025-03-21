@@ -1,0 +1,66 @@
+
+category
+
+_id: 62c10911eef0cb91f4c05d5d
+name: "Sides"
+imagePath: "12612ee9-2d87-4523-a13d-7164929042ed_1656817937331.png"
+link: "sides"
+
+
+dish
+
+_id: 62c237a69f80ddf4174e2d63
+name: "Chocolate Lava Crunch Cake"
+category: 62c10930eef0cb91f4c05d63
+imagePath: "5d1a5ccb-f5a1-44ee-8593-83bfe5c264d9_1656895398086.jpg"
+price: 5.9
+description："Oven baked chocolate cakes, crunchy on the outside with molten chocola…"
+spice： "None"
+createdOn： 2022-07-04T00:36:42.960+00:00
+updatedOn： 2022-07-04T00:36:42.960+00:00
+
+
+order:
+
+id：62c35e5df7aeed8539b28eaf
+userId：62c35e41f7aeed8539b28ea3
+totalPrice：71.4
+subTotal：68
+taxPrice：3.4
+shippingPrice：0
+address："770 Broadway, New York, NY 10003, USA"
+createdOn：2022-07-03T21:39:08.880+00:00
+
+dishes：
+Array (2)
+
+0
+Object
+dishName："Brooklyn Pizza"
+quantity：5
+price：9.8
+totalItemPrice： 49
+_id：62c35e5df7aeed8539b28eb0
+
+1
+Object
+dishName："Veggie"
+quantity：2
+price：9.5
+totalItemPrice：19
+_id：62c35e5df7aeed8539b28eb1
+
+
+
+
+user:
+_id：62c0daedea29cd67b67ee91e
+firstName："Jun"
+lastName："Wong"
+userType："Admin"
+email："junwong@italianpizza.com"
+password："$2a$10$DcmJlsgcS.rkt3NitGWfi.Ag.Wm0jktUMlzDk/.dMS2xupxDXMgrm"
+mobileNumber："1234567889"
+address："401 W Georgia St, Vancouver, BC V6B 5A1, Canada"
+createdOn：2022-07-02T23:30:17.064+00:00
+updatedOn：2022-07-02T23:30:17.064+00:00

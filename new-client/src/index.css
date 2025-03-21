@@ -1,0 +1,622 @@
+body {
+  margin: 0;
+  padding:0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  align-items: center;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+a{
+  text-decoration: none;
+}
+
+
+li{
+  list-style: none;
+}
+
+h2, h3,h4,h5,p,a{
+  color:black;
+}
+.headerContainer {
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+  display:flex;
+}
+.logo{
+  width:120px;
+}
+.app-logo {
+  display:inline-block;
+  width: 110px;
+  margin: 5px;
+}
+.searchContainer {
+  display:flex;
+}
+.searchContainer button{
+  display:inline-block;
+  color: #000;
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor:pointer;
+  font-size: 1.4rem;
+}
+.searchContainer button:hover{
+  color:#ba1626;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield; 
+}
+
+
+.navContainer{
+  display: flex;
+  flex-direction:column;
+}
+
+.dropdown-toggle::after {
+  display: none !important; 
+}
+
+.logIn{
+  font-size:calc(0.9rem + 0.5vw);
+  font-family: 'Padauk', sans-serif;
+  font-weight: 700;
+  position: relative;
+  top: 0.4rem;
+  
+}
+.logIn button{
+  border:none;
+  background:none;
+}
+.logIn button:hover{
+  color:#ba1626;
+}
+
+.categoryContainer{
+  display:flex;
+  flex-direction: column;
+  width:80vw;
+  margin: 2rem auto;
+  background-color: rgba(209, 206, 206, 0.109);
+  border:rgb(170, 170, 170) 1px solid;
+
+}
+.categoryContainer:hover{
+  background-color: rgba(209, 206, 206, 0.3);
+}
+.categoryContainer .imgContainer{
+  float: left;  
+}
+
+.editDeleteCategory{
+  display:flex;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.categoryContainer:first-of-type a{
+  text-decoration:none;
+}
+
+
+.categoryTitle{
+
+  font-family: 'Cairo', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  margin-top:2rem;
+  display:block;
+  color:#212529;
+
+}
+
+.logOut button{
+  background: none;
+  border:none;
+}
+.aboutContainer{
+  width: 80vw;
+  margin: 2rem auto;
+  
+  background-color: rgb(248, 240, 240);
+  padding:10px;
+  padding-top:20px;
+}
+.aboutContainer h1{
+  font-family: 'Shrikhand', cursive;
+  font-weight: 400;
+  font-size: calc(1.5rem + 0.5vw);
+  text-align: center;
+  margin-bottom: 2rem;
+  
+}
+.aboutContainer p {
+  margin: 1rem;
+  padding:5px;
+  text-align: justify;
+  font-size: 1rem;
+  font-family: sans-serif;
+  }
+
+.dishContainer{
+  margin: 1rem;
+}
+.dishContainer a{
+  text-decoration: none;
+}
+.card{
+  width: 18rem;
+  height:29rem;
+}
+.card-text{
+  font-size: 0.9rem;
+  font-family: sans-serif;
+}
+
+.card-img-top{
+  height:15rem;
+  object-fit:cover;
+}
+
+.buttonGroupDish{
+  position:absolute;
+  bottom:2px;
+}
+.dishContainer button{
+  margin-left:3rem;
+  width:100%;
+}
+
+.card-title{
+  font-size:1rem;
+}
+.dishDiscrip{
+  display:inline-block;
+  font-size:0.7rem;
+  height:3.9rem;
+}
+.cartIcon{
+  color: #000;
+  padding: 0.5rem;
+  border-radius:5px;
+  font-size:1.5rem;
+  }
+  
+.cartIcon:hover{
+    color: #ba1626;
+  }
+
+
+.logInContainer, .addDishContainer, .editDishContainer,.contactUsContainer, .registerContainer,.dishDetailContainer {
+  width:70vw;
+  margin:  2rem auto;
+  padding: 1rem;
+}
+.logInContainer h2, .editDishContainer h2, .addDishContainer h2, .registerContainer h2, .contactUsContainer h2, .dishDetailContainer h2, .orderList h2{
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.editDishContainer button{
+  margin-top: 1rem;
+}
+.input-container{
+  margin-top:1rem;
+}
+
+.logInContainer p, .addDishContainer p {
+  margin: 1rem;
+  text-align: center;
+}
+
+
+.addDishContainer button {
+  margin-top: 2rem;
+  text-align:center;
+}
+.dishDetailContainer button, .dishDetailContainer a{
+  margin-top: 1rem;
+  width:100%;
+}
+
+.navContainer a{
+  margin-right:1rem;
+  font-size:1rem;
+  font-weight:500;
+  color:rgb(49, 41, 41);
+}
+
+
+.navContainer a:hover{
+  color:#ba1626;
+}
+
+.cartTitle{
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.cartDetailContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:90vw;
+  margin:  2rem auto;
+  padding: 0.5rem;
+}
+.summary{
+  margin-top:2rem;
+  width:80vw;
+  font-size:1.3rem;
+  font-weight:600;
+  }
+.summary span{
+  float:right;
+}
+.checkOutBtn, .addMoreBtn{
+  width:80vw;
+}
+.itemContainer{
+  display:flex;
+  flex-direction: column;
+  margin:2rem auto;
+  padding:0.8rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+ .itemImage img{
+  display:inline-block;
+  width:200px;
+  height:auto;
+  border-radius: 5px;
+
+}
+.itemName{
+  font-size: 1.3rem;
+  font-weight:600;
+}
+.itemName span{
+  float:right;
+  margin-right:1rem;
+  color:rgb(228, 13, 121);
+}
+.itemDiscrip{
+  width:70vw;
+}
+.updateQuantity{
+  margin:auto;
+  
+}
+
+.updateQuantity button{
+  margin-right:1rem;
+  margin-left:1rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.badge{
+  position:relative;
+  top:-0.7rem;
+  left:-1rem;
+  font-size: 0.65rem!important;
+}
+
+  
+.footerContainer{
+  margin-top: 20px;
+}
+.footerContainer p{
+  text-align: center;
+}
+
+
+.orderContainer{
+  display:flex;
+  flex-direction:column;
+  width:70vw;
+  margin: auto;
+}
+.storeName{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.storeName, .orderDate, .orderNumber{
+  margin:auto;
+  margin-top:1rem;
+}
+
+.orderContainer span{
+  float:right;
+}
+.orderContainer button{
+  margin-top:1rem;
+  width:100%;
+}
+
+.emptyCart{
+  margin:auto;
+  width:20rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.suggestion p {
+  margin-left: 6rem;
+}
+.suggestion .btn {
+  margin-top:1rem;
+  width:20rem;
+}
+
+.editDeleteCategory button{
+
+  margin-left:1rem;
+  background-color: none;
+}
+.editDeleteCategory button:hover{
+  color: #ddd;
+}
+
+@media screen and (min-width: 576px) {
+  .orderContainer{
+    width:80vw;
+  }
+  .navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navContainer a{
+    margin-right:-1rem;
+  }
+
+ 
+}
+@media screen and (min-width: 1024px) { 
+  .orderContainer{
+    width:60vw;
+  }
+  .cartDetailContainer{
+    width:80vw;
+    margin-left:-5rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .summary{
+    margin-left:2rem;
+  }
+  .itemDiscrip{
+    width:35vw;
+  }
+  .itemContainer{
+    flex-direction: row;
+    padding:1rem;
+  }
+  .itemDetail{
+    margin-left:2rem;
+  }
+
+  .updateQuantity{
+    margin-left:3rem;
+  }
+  
+  .updateQuantity button{
+    font-size: 1.2rem;
+  }
+
+  .checkOutBtn, .addMoreBtn{
+    width:25vw;
+  }
+
+  
+}
+
+@media screen and (min-width: 1240px){
+   
+  .navContainer a{
+    margin-right:1rem;
+    font-size:1.2rem;
+  }
+ 
+  .headerContainer {
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    column-gap: 0rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+
+  .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Padauk', sans-serif;
+    font-weight: 500;
+  
+  }
+  .locationContainer span {
+    display:none;
+  }
+
+  
+  .signContainer{
+    font-size:1.3rem;
+    font-family: 'Padauk', sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: -0.4rem;
+  }
+  .logIn{
+    font-size:1.5rem;
+
+    font-family: 'Padauk', sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: 0.4rem;
+    
+  }
+  .logIn button{
+    border:none;
+    background:none;
+  }
+
+
+  #dropdown-button{
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    cursor:pointer;
+    margin-top: 0.7rem;
+  }
+  .logOut button{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+  }
+
+  
+  .carousel{
+    width:65vw;
+    margin:auto;
+  
+  }
+  .carouselItem{
+    width:100vw;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .carouselItem img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+ 
+  .aboutContainer{
+    width:60vw;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+  }
+  .aboutContainer h1{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    
+  }
+  .aboutContainer p, .dishDetailContainer p{
+    margin: 1rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight:200;
+    }
+  .dishDetailImg{
+    margin-left:8rem;
+  }
+  .categoryContainer{
+    display:flex;
+    flex-direction: column;
+    width:60vw;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgba(209, 206, 206, 0.201);
+    
+  }
+  .categoryContainer .imgContainer{
+    float: left;  
+  }
+  
+  .categoryTitle{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size:large;
+    text-align: center;
+    margin-top:2rem;
+  }
+  
+  .locationContainer span {
+    display:inline-block;
+  }
+  
+  /* .locationContainer {
+    grid-column:4;
+    margin: 2rem;
+    font-size:1.3rem;
+    font-family: 'Padauk', sans-serif;
+    font-weight: 700;
+    position:relative;
+    } */
+
+  
+  .editDishContainer button{
+    margin-top: 1rem;
+  }
+  .input-container{
+    margin-top:1rem;
+  }
+  
+  .logInContainer p, .addDishContainer p {
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .addDishContainer button {
+    margin-top: 2rem;
+    text-align:center;
+  }
+  .dishDetailContainer button{
+    margin-top: 1rem;
+    width:100%;
+  }
+  .logInContainer, .addDishContainer, .editDishContainer,.contactUsContainer, .dishDetailContainer, .registerContainer {
+    width:40vw;
+    
+  }
+  .logInContainer h2, .editDishContainer h2, .addDishContainer h2, .contactUsContainer h2, .dishDetailContainer h2, .orderList h2, .registerContainer h2{
+     font-size: 3rem;
+   }
+
+}
+
